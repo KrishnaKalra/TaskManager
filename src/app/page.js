@@ -22,7 +22,7 @@ export default function Home() {
   let getEvent = async () => {
     try {
       console.log('what');
-      const result = await axios.get("http://localhost:3000/api/Event/Krishna");
+      const result = await axios.get("https://task-manager-dusky-seven.vercel.app/api/Event/Krishna");
       console.log("Event Data:", result.data); 
       setEvent(result.data);// Log API response
       // setEvent(result.data); // Uncomment if using state
@@ -50,7 +50,7 @@ export default function Home() {
   const patchNotDone=async (e)=>{
     console.log(e)
     e.notDone=false;
-    await axios.patch("http://localhost:3000/api/Event/Krishna?eventId="+e._id,e);
+    await axios.patch("https://task-manager-dusky-seven.vercel.app/api/Event/Krishna?eventId="+e._id,e);
     getEvent();
   }
   useEffect(() => {

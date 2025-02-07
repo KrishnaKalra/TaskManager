@@ -6,7 +6,7 @@ function EventList({ getEvent, event }) {
     console.log(e);
     e.notDone = false;
     await axios.patch(
-      "http://localhost:3000/api/Event/Krishna?eventId=" + e._id,
+      "https://task-manager-dusky-seven.vercel.app/api/Event/Krishna?eventId=" + e._id,
       e
     );
     getEvent();

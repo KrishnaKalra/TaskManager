@@ -15,7 +15,7 @@ function TaskTeller({ getEvent, presentDate }) {
     };
     console.log("submitting:" + form);
     await axios.post(
-      `http://localhost:3000/api/Event/Krishna`,
+      `https://task-manager-dusky-seven.vercel.app/api/Event/Krishna`,
       JSON.stringify(form)
     );
     getEvent();

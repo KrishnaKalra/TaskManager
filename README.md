@@ -1,8 +1,8 @@
 # **TaskManager**  
 
 <div align="center">  
-   The Task Manager is a web application designed to help users **create, manage, and track tasks** efficiently.  
-   Built with **Next.js, React, MongoDB, and Axios**, it provides a seamless experience for handling tasks with a **user-friendly interface and real-time updates**.  
+   The Task Manager is a web application designed to help users create, manage, and track tasks efficiently.  
+   Built with Next.js, React, MongoDB, and Axios, it provides a seamless experience for handling tasks with a **user-friendly interface and real-time updates**.  
 </div>  
 
 ---

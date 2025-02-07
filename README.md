@@ -12,7 +12,13 @@
 ----------------------------------------
 
 <div align="center">
-    <b>Vulkan</b> is a system for testing various implementations, built to facilitate comprehensive testing in a competitive development context. It is implemented using Go, MongoDB, Git and Docker.
+    User Flow
+   - The user creates a task by filling out a form and submitting it.
+   - The task is stored in MongoDB and displayed on the screen.
+   - Users can check off completed tasks, updating their status in the database.
+   - The UI updates dynamically without requiring a full page refresh.
+   - The user can retrieve all tasks whenever they visit the page.
+   - Future improvements may include deleting tasks, editing task details, and user authentication.
 </div>
 
 <div align="center">
@@ -38,49 +44,25 @@ Before you begin, ensure you have the following installed:
    First, clone the Vulkan repository to your local machine:
 
    ```bash
-   git clone https://github.com/p-society/vulkan.git
-   cd vulkan
+   git clone https://github.com/KrishnaKalra/TaskManager.git
    ```
 
-2. **Build the Project**
+2. **Dependencies**
 
-    Use `make` to build the Vulkan executable:
+    Use `npm` to install the dependencies:
 
     ```bash
-    make
+    npm i
     ```
 
 3. **Run**
 
-    Execute Vulkan with the desired GitHub repository URL:
+    Execute TaskManger with npm:
 
     ```bash
-    ./vulkan <github-url>
+    npm start // npm run
     ```
-    Example:
+  
 
-    ```bash
-    ./vulkan https://github.com/majorbruteforce/http-starter.git
-    ```
-
-### Troubleshooting
-
-- Permission Denied for Docker: Ensure your user is added to the docker group. Refer to the [Docker documentation](https://docs.docker.com/engine/install/linux-postinstall/) for instructions on adding your user to the docker group.
-
-- Missing Dependencies: Make sure both Go and Docker are installed and accessible from your command line. Verify installation by running go version and docker --version.
-
-
-### Current contributors <a name="Current contributors"></a>
-
-<a href="https://github.com/p-society/vulkan/graphs/contributors">
-    <img src="https://contributors-img.web.app/image?repo=p-society/vulkan" />
-</a>
-
-Made with [contributors-img](https://contributors-img.web.app).
-
-## Subscribe to updates
-<center>
-	
-Join our [Discord Server](https://discord.gg/UhmKJGMnan) and [subscribe](https://github.com/p-society/vulkan) to this repository  to get updates, information about Vulkan
     
 </center>

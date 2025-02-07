@@ -6,7 +6,7 @@ import { parseDate } from "@internationalized/date";
 import CalendarThere from "./component/calendar";
 import {today, getLocalTimeZone, isWeekend} from "@internationalized/date";
 import axios from "axios";
-import TaskTeller from "./component/taskTeller";
+import TaskTeller from "./component/TaskTeller";
 import EventList from "./component/EventList";
 export default function Home() {
   let [value, setValue] = useState(parseDate("2024-03-07"));

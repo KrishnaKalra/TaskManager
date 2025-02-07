@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    TaskManager
+</h1>
 
-## Getting Started
 
-First, run the development server:
+<div align="center">
+   The Task Manager is a web application designed to help users create, manage, and track tasks efficiently. Built with Next.js, React, MongoDB, and Axios, it provides a seamless experience for handling events with a user-friendly interface and real-time updates.
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+----------------------------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<div align="center">
+    <b>Vulkan</b> is a system for testing various implementations, built to facilitate comprehensive testing in a competitive development context. It is implemented using Go, MongoDB, Git and Docker.
+</div>
 
-## Learn More
+<div align="center">
+    <br/>
+	<img src='https://skillicons.dev/icons?i=react,nextjs,git,mongodb,' ></img>
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+## Installation Guide
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To get started with Vulkan, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+Before you begin, ensure you have the following installed:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Go**: [Download and install Go](https://golang.org/doc/install)
+- **Docker**: [Install Docker](https://docs.docker.com/get-docker/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. **Clone the Repository**
+
+   First, clone the Vulkan repository to your local machine:
+
+   ```bash
+   git clone https://github.com/p-society/vulkan.git
+   cd vulkan
+   ```
+
+2. **Build the Project**
+
+    Use `make` to build the Vulkan executable:
+
+    ```bash
+    make
+    ```
+
+3. **Run**
+
+    Execute Vulkan with the desired GitHub repository URL:
+
+    ```bash
+    ./vulkan <github-url>
+    ```
+    Example:
+
+    ```bash
+    ./vulkan https://github.com/majorbruteforce/http-starter.git
+    ```
+
+### Troubleshooting
+
+- Permission Denied for Docker: Ensure your user is added to the docker group. Refer to the [Docker documentation](https://docs.docker.com/engine/install/linux-postinstall/) for instructions on adding your user to the docker group.
+
+- Missing Dependencies: Make sure both Go and Docker are installed and accessible from your command line. Verify installation by running go version and docker --version.
+
+
+### Current contributors <a name="Current contributors"></a>
+
+<a href="https://github.com/p-society/vulkan/graphs/contributors">
+    <img src="https://contributors-img.web.app/image?repo=p-society/vulkan" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
+
+## Subscribe to updates
+<center>
+	
+Join our [Discord Server](https://discord.gg/UhmKJGMnan) and [subscribe](https://github.com/p-society/vulkan) to this repository  to get updates, information about Vulkan
+    
+</center>

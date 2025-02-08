@@ -6,6 +6,7 @@ function TaskTeller({ getEvent, presentDate }) {
   let [endTime, setEndTime] = useState();
   let [title, setTitle] = useState();
   let SubmitCall = async (e) => {
+    let link="https://task-manager-dusky-seven.vercel.app/"
     e.preventDefault();
     const form = {
       endDate: presentDate,
@@ -13,16 +14,17 @@ function TaskTeller({ getEvent, presentDate }) {
       title: title,
       description: description,
     };
+
     console.log("submitting:" + form);
     await axios.post(
-      `https://task-manager-dusky-seven.vercel.app/api/Event/Krishna`,
+      link+`api/Event/Krishna`,
       JSON.stringify(form)
     );
     getEvent();
   };
 
   return (
-    <div className="p-5 h-[60%] text-center bg-[#121212] flex flex-col flex-center ">
+    <div className="px-5 pt-5 h-[50%] rounded-xl text-center bg-[#121212] flex flex-col flex-center ">
       <h1 className="text-3xl">Add a Task</h1>
       <form
         className="flex flex-col h-[80%] justify-around"

@@ -15,14 +15,14 @@ export default function Home() {
 
 
   let [event, setEvent] = useState([]);
-
+  let link="https://task-manager-dusky-seven.vercel.app/"
 
 
 
   let getEvent = async () => {
     try {
       console.log('what');
-      const result = await axios.get("https://task-manager-dusky-seven.vercel.app/api/Event/Krishna");
+      const result = await axios.get(link+"api/Event/Krishna");
       console.log("Event Data:", result.data); 
       setEvent(result.data);// Log API response
       // setEvent(result.data); // Uncomment if using state
@@ -47,12 +47,7 @@ export default function Home() {
   },[date]);
 
 
-  const patchNotDone=async (e)=>{
-    console.log(e)
-    e.notDone=false;
-    await axios.patch("https://task-manager-dusky-seven.vercel.app/api/Event/Krishna?eventId="+e._id,e);
-    getEvent();
-  }
+
   useEffect(() => {
     getEvent();
   }, []);
@@ -65,9 +60,9 @@ export default function Home() {
     <div className=" dark h-[100vh] items-center w-[100vw] flex justify-center ">
       <div className="m-10 h-[90%] w-[80%]">
         <div className="mx-4 flex  h-[100%]  w-[90%] border-white border-2 justify-center items-center">
-          <div ><CalendarThere date={date} setDate={setDate}/>
+          <div className='h-[80%]'><CalendarThere date={date} setDate={setDate}/>
           <TaskTeller getEvent={getEvent} presentDate={presentDate} /></div>
-          <EventList getEvent={getEvent} event={event}/>
+          <EventList getEvent={getEvent} event={event} presentDate={presentDate}/>
         </div>
       </div>
     </div>

@@ -7,12 +7,10 @@ import {useLocale} from "@react-aria/i18n";
 export default function CalendarThere({date,setDate}) {
   let {locale} = useLocale();
   let isInvalid = isWeekend(date, locale);
-  React.useEffect(()=>console.log(date),[date]);
+  //React.useEffect(()=>console.log(date),[date]);
   return (
     <Calendar
       aria-label="Date (Invalid on weekends)"
-      errorMessage={isInvalid ? "We are closed on weekends" : undefined}
-      isInvalid={isInvalid}
       value={date}
       onChange={setDate}
     />

@@ -9,7 +9,7 @@ function EventList({ getEvent, event,presentDate}) {
     e.notDone = false;
     await axios.patch(
       link+"api/Event/Krishna?eventId=" + e._id,
-      
+      e
     );
     getEvent();
   };
